@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Personal Web Profile</title>
+  <style>
+    :root{ --green:#1e7b3a; --muted:#666; --container:1000px }
+    body{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#fafafa; color:#222; margin:0; padding:40px; }
+    .wrapper{ max-width:var(--container); margin:0 auto; background:#fff; padding:28px 36px; box-shadow:0 6px 18px rgba(0,0,0,.06); }
+
+    header h1{ color:var(--green); margin:0 0 8px 0; font-size:28px; }
+    header p.sub{ margin:0 0 14px 0; color:var(--muted); font-weight:600 }
+
+    .intro{ border-top:1px solid #ddd; padding-top:14px; margin-bottom:18px; color:#333 }
+    .intro strong{ background:linear-gradient(90deg,#fff7c6,#fff); padding:2px 6px; border-radius:3px }
+
+    .top-row{ display:flex; gap:24px; align-items:flex-start }
+    .photo{ width:130px; }
+    .photo img{ width:100%; border:1px solid #ddd; border-radius:4px }
+
+    .link-small{ font-size:13px; margin-top:8px }
+
+    h2.section{ color:var(--green); border-bottom:1px solid #e6e6e6; padding-bottom:8px; margin-top:22px }
+
+    blockquote{ margin:10px 0 18px 0; padding-left:18px; border-left:4px solid #ddd; color:#555 }
+
+    ul, ol{ margin:8px 0 14px 24px }
+
+    .terms dt{ font-weight:700; margin-top:8px }
+    .terms dd{ margin:0 0 8px 18px; color:#444 }
+
+    table.info{ border-collapse:collapse; width:60%; min-width:320px }
+    table.info th, table.info td{ border:1px solid #bdbdbd; padding:8px 12px; text-align:left }
+    table.info th{ background:#efefef }
+
+    .styled{ margin-top:14px }
+    .styled p.bg{ background:#fffb95; padding:8px; }
+    .styled p.border{ border:2px dotted #b33; padding:10px }
+    .styled p.big{ font-size:20px; font-weight:700 }
+    .styled p.custom{ color:#2b9aa0 }
+
+    hr.soft{ border:none; border-top:1px solid #eee; margin:22px 0 }
+
+    footer{ margin-top:26px; color:#888; font-size:13px }
+
+    /* responsive */
+    @media (max-width:720px){ .top-row{ flex-direction:column } table.info{ width:100% } }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Honny Darwin Macapayad</h1>
+      <p class="sub">BSIT Student | Web Development Enthusiast</p>
+    </header>
+
+    <section class="intro">
+      <div class="top-row">
+        <div style="flex:1">
+          <p>Hello! My name is <strong>Honny Darwin Macapayad</strong> and I am currently studying <em>Information Technology</em>. I enjoy designing websites and exploring new technologies in programming. I believe that learning HTML is <strong>important</strong> because it is the foundation of all web development. I always <strong>challenge myself</strong> to improve and never stop learning.</p>
+        </div>
+
+        <aside class="photo">
+          <!-- Replace "profile.jpg" with your actual photo filename -->
+          <img src="d:\ComLab\Pictures\d.jpg" alt="My photo" />
+          <p class="link-small">Visit my favorite learning website: <a href="https://www.w3schools.com" target="_blank">W3Schools Online Tutorials</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section">My Favorite Quote</h2>
+      <blockquote>
+        "The future depends on what you do today."<br>
+        <cite>— Mahatma Gandhi</cite>
+      </blockquote>
+    </section>
+
+    <section>
+      <h2 class="section">My Hobbies</h2>
+      <ul>
+        <li>Fishing</li>
+        <li>Cooking</li>
+        <li>Playing Mobile Games</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section">My Weekly Goals</h2>
+      <ol>
+        <li>Finish all school tasks</li>
+        <li>Study web development</li>
+        <li>Practice problem-solving</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2 class="section">Technical Terms I Know</h2>
+      <dl class="terms">
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language, used for structuring web pages</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets, used for styling web pages</dd>
+        <dt>Browser</dt>
+        <dd>Software that displays webpages, like Chrome or Firefox</dd>
+      </dl>
+    </section>
+
+    <hr class="soft">
+
+    <section>
+      <h2 class="section">My Information Table</h2>
+      <table class="info">
+        <tr><th>Category</th><th>Details</th></tr>
+        <tr><td>Favorite Language</td><td>Python</td></tr>
+        <tr><td>Favorite Tool</td><td>Visual Studio Code</td></tr>
+        <tr><td>Strength</td><td>Logical Thinking</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2 class="section">Styled Elements</h2>
+      <div class="styled">
+        <p>This text is styled using inline CSS.</p>
+        <p class="bg">This paragraph has a background color.</p>
+        <p class="border">This paragraph has a border.</p>
+        <p class="big">This paragraph has increased font size.</p>
+        <p class="custom">This text uses a custom color.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section">Block and Inline Elements</h2>
+      <p style="background:#eaf5e9; padding:10px;">This is a <strong>block-level</strong> element. It takes the full width of the page.</p>
+      <p>Here is an example of an <span style="color:#b12; font-weight:600;">inline element</span> placed inside a paragraph.</p>
+    </section>
+
+    <footer>
+      <p>Created with ♥ — Replace the placeholder photo (profile.jpg) with your own image and save this file as <code>index.html</code>. Open it in a browser to view.</p>
+    </footer>
+  </div>
+</body>
+</html>
+
